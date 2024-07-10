@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,37 +11,79 @@
     <link rel="stylesheet" href="style.css">
     <title>Chat</title>
 </head>
+
 <body>
-    <div class="chat-box"> 
-        <div class="chat-header">
-            <div class="avatar-container">
-                <img src="image/WhatsApp Image 2024-06-30 at 11.43.09.jpeg" alt="avatar" class="avatar">
-                <div class="status online"></div>
+    <div class="main-container">
+        <div class="menu-chat">
+            <div class="menu-header">
+                <div class="avatar-container">
+                    <img src="image/WhatsApp Image 2024-07-10 at 13.50.45.jpeg" alt="avatar" class="main-avatar">
+                </div>
+                <div class="main-username">Meia-Noite</div>
+                <div class="menu-btn"> 
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII=" alt="menu" class="menu-icon">
+                </div>
             </div>
-            <div class="username">Natalina</div>
+
+            <div class="menu-body">
+                <div class="menu-item">
+                    <p>Chat em Grupo</p>
+                </div>
+                <div class="menu-item">
+                    <p>IA</p>
+                </div>
+                <div class="menu-item">
+                    <p>Tradução Automática</p>
+                </div>
+                <div class="menu-item">
+                    <p>Conselho Aleatório</p>
+                </div>
+                <div class="menu-item">
+                    <p>Texto para Áudio</p>
+                </div>
+            </div>
+
+            <div class="logout">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaBJREFUSEvN1D9IVmEUBvCfDuVilGBktDVEKQmG6WCQ0ODiGuLiUjg4FbWFS9IgSFNh0CBCS0NrJDhIkwmCpWRL0RIUGf0ZxfKeeI3PP/f7vNoHvnDhcjnvee7zPOc8Nap8aqrc34EBaEUPOtCVWL/EbPbtOd7kKVGJwSHcww3U5jT5jVEMY3VrTTmAk5hCM1ZwH3OYT00u4CJu4igW0Jc9y6UglRiM4Byu4VsOg+N4jF58QSc+bNRWAigyZBNZ4wG8SH79vZsHENo/wPUCCIfxHiHt+Q3jdwJoygqeJapFGd5Oho/h1k4MQr9oHiDlGOYRC7+W8Box2pskCiNDlpCnyCllWZ9N1U98x7FqABzJduYHfiHet5m8X4na8SrJ1JKn8X5MvoO7eIih/z2mdWnBTuAKpvcyJeXMf4J+zODybjc5oqIh0f2T0z2m6FFays9ow6fdAJxKwdaItxjHZBrBuB/AEQ2DOIOv2d93Y7FI2J1OQfaPcg6LyJ8A+lgkrktrY/yuZsZdwlms4V3S+2lJhG/DL5o1RTZ8T1lz8ADWAW3fRBmNz1fBAAAAAElFTkSuQmCC" alt="logout" class="logout-icon"/>
+            </div>
         </div>
 
-        <div class="chat-body">
-            <!-- chat messages -->
-            <div class="message">I started a new project at work.</div>
-            <div class="message sent"> What's the project about?</div>
-            <div class="message">We're redesigning our website to improve user experience. It's challenging, but I'm learning a lot.</div>
-            <div class="message sent">Nice! Are you using any new technologies for it?</div>
-            <div class="message">Yeah, we're diving into CSS animations and some JavaScript to make it more interactive. It's quite fun, actually.</div>
-            
+        <div class="chat-box">
+            <div class="chat-header">
+                <div class="avatar-container">
+                    <img src="image/WhatsApp Image 2024-06-30 at 11.43.09.jpeg" alt="avatar" class="avatar">
+                    <div class="status online"></div>
+                </div>
+                <div class="username">Natalina</div>
+            </div>
 
+            <div class="chat-body">
+                <div class="message">I started a new project at work.</div>
+                <div class="message sent">What's the project about?</div>
+                <div class="message">We're redesigning our website to improve user experience. It's challenging, but I'm learning a lot.</div>
+                <div class="message sent">Nice! Are you using any new technologies for it?</div>
+                <div class="message">Yeah, we're diving into CSS animations and some JavaScript to make it more interactive. It's quite fun, actually.</div>
+            </div>
 
+                <div class="chat-footer">
+                    <button class="chat-btn"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWpJREFUSEvV1L1KHWEQxvHfES/BiDEY8YNoJQgpJIHYmkZvIEUKBS8ggt6BojeQQlJ4BwbSJyQ2NmJjBBPiJ6Kg3kAwZ2CFzcs5Z132WDjV7rzzPv/ZmdmpeWCrPbC++wB68Bkvk2S2MY3zVkkWAZ5gC8NNRA7wCpfNIK0AIf4No/iJNzmh9Ow1rhpB8oAZLGeC+dgQn8RFItCdJTCS+PfwAV/Cnwec4FkSvJ9lnorfhUV/vuJFcu83hlLAbRZU1JeiwftPJy/WChCZfkTUOuw75po0tzQgar1TBzxNUj/EOK4Tf2nABt5hE4vowBqmsq+arwo4RW82AGeZ2CB+4Qj9VQF309WHeA57jihRvIc/b6VL9Anvs3WxgE6s4m1dfL0Oma0K6MJugyYfYww3VQFxPyYosp3AX/xo55gW/VjpeeketA0QUxHT0Q77g4F0F8U2XUG6HcsCYyCWGm3TskL3iq+6OQshjx/wD1YqTxmlYc6OAAAAAElFTkSuQmCC"
+                            alt="Camera"></button>
+                    <input type="text" class="chat-input">
+                    <button class="chat-btn"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaFJREFUSEvt1T1IV1EYx/GPECTSFJiQVLRoEFEi2As0BQ3tIUFEYWIRtDgIrqLg0BoFRUQEUUsNQXP0NlWDCDkpBJKgi0hBb54HjqJ//9d7Rf5D0IEL5557zvN9zvPyu00aPJoabF9VwEXcxBF8xzv0Y7bMwSqA83hax9BXHE3ghc0gVQAfcBzPMYwlPMFJ3MW17QLmsRttmMvGDmA6Pwe3C/ibDdTetmh9Ha9KiP4DyirZvxeiqPMW7Mo1Hw3Vjn2IeYz9mMnvsR57F/P+mK+OelX0BR3oxkc8SPV+GS+STAyhGWM4l6D3E+QqTuA9JnG4DHAPfbiD62jFBPbUZCtucwzRiA9xKe25jRtlgFN4i1/owSfsRYDD0z94k4RuIDnwDafxOhvtwucyQHx/hFDQiPNZTBXUWtzgVZaRDd7HmaJO3omXOIMfOVy31iS5MyV1MDlwBTtS3J/hAn7XOrKZVEQyx/N/oKhZfmIUIzl0G/ZV0aJQzvC0N8n0oWwh8vI4h3JFYes6UQWw9mAlBa2S5KKQNBxQKlxbSfKWjdU7sAxCglIZXmUQ3wAAAABJRU5ErkJggg=="
+                            alt="Microphone"></button>
+                    <button class="chat-btn"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARtJREFUSEvd1LEuBGEUxfHfdiJ6hRIRGoUHoSJKOgUVhTegUOkUlMID8BQKEjSiUngARIW5yUwyOzbrm53ZCF81mZnv/O899+R2DPl0hqzvfwGWsIeZhrbdYgeXoVO26BnjDcWL6w+YLgMC9JF/bTKXbzqFWC/AGF4wi/vEzpIBIX6EVRxiq21A6H2WRFNtS+4gbNnAJg4yq7ZLsNEsaaeZbSt4r3SWDOjnyBmWcYL1NgBrWa5fcY54Pi6JRhfxvji1O5jDVR7hGHhUP1ISfMM8IvdF7Lvi3i+m4fU1pn5I0B0W8nnU6qDwOiWhxTxqAVKEq//8HiAqecLEIGX3uPOIyeo2XcR+C+v6Bru4qAJaKr5bJnXHDAz/+4AvDp87GekKjNgAAAAASUVORK5CYII="
+                            alt="Image"></button>
+                    <button class="chat-btn"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhtJREFUSEu11UnoTmEUx/HPXzJEip0hlAVFSLFSrGRIQoYFSkkSsZCFvwxhJSlTyYJQYiEZoyxk2MkUyZxsFSlDhOfU89bf7b73+r/13tW99xm+5znnd35PhzY/HW3eXx2gNxZiJiZgJP7gHR7iGs7jZ7NAqwCzcCRvWnXQV1iDm2WTmgF2pEi35wXvcRZX8Cj/m4i5WIxh+d8m7CtCygCNzb9gGS7ltJQF2AOLcBx9sQEHuk4sAiKqi/iWIp6cFj/9TxFMwV0EcBruNNZ1BfTHCwzGcpwu2TwKHE/ZyTdiP56nwo9vFL7rxLU4nPL6DOOapKUK0CurKwKcjwvFSK4ilLMug8qyUwWI+XuwBcewugj4kAaGYhTeNMl9HWAqbuNBquWkIuBrVkKo4XsGNDasq3Uj1YPwEZ8wsAgIWUahByDe4+kuINZ+zuvj/R81RPVHZwU8aTFFkZb7WShji4AzSWJLsRl7WwRsxa5Ux1OpjiuKgND+SbzEGPzuZh/0TP3zGsOxBOeKgChupCkmrEwmd6KbgPXZJqJZo9F+lHXkDFxvwSrCVu5lq5iepdq05TuxO6shzO5yhUbDeyId0Vj9kkTjFIeqzK4xti0pbGf+eJvtOjr9McISwkrmZScdkuUcTnqwGEzVhTMnGd/R3N1VjRYXzircKptUd2X2SVEvwOxcuBE52lBL6P1GNrVfzSKoA9RZRO142wF/Afg0ahnLfIJIAAAAAElFTkSuQmCC"
+                            alt="Plus"></button>
+                </div>
+            </div>
         </div>
 
-        <div class="chat-footer">
-            <button class="chat-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWpJREFUSEvV1L1KHWEQxvHfES/BiDEY8YNoJQgpJIHYmkZvIEUKBS8ggt6BojeQQlJ4BwbSJyQ2NmJjBBPiJ6Kg3kAwZ2CFzcs5Z132WDjV7rzzPv/ZmdmpeWCrPbC++wB68Bkvk2S2MY3zVkkWAZ5gC8NNRA7wCpfNIK0AIf4No/iJNzmh9Ow1rhpB8oAZLGeC+dgQn8RFItCdJTCS+PfwAV/Cnwec4FkSvJ9lnorfhUV/vuJFcu83hlLAbRZU1JeiwftPJy/WChCZfkTUOuw75po0tzQgar1TBzxNUj/EOK4Tf2nABt5hE4vowBqmsq+arwo4RW82AGeZ2CB+4Qj9VQF309WHeA57jihRvIc/b6VL9Anvs3WxgE6s4m1dfL0Oma0K6MJugyYfYww3VQFxPyYosp3AX/xo55gW/VjpeeketA0QUxHT0Q77g4F0F8U2XUG6HcsCYyCWGm3TskL3iq+6OQshjx/wD1YqTxmlYc6OAAAAAElFTkSuQmCC" alt="Camera"></button>
-            <input type="text" class="chat-input">
-            <button class="chat-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaFJREFUSEvt1T1IV1EYx/GPECTSFJiQVLRoEFEi2As0BQ3tIUFEYWIRtDgIrqLg0BoFRUQEUUsNQXP0NlWDCDkpBJKgi0hBb54HjqJ//9d7Rf5D0IEL5557zvN9zvPyu00aPJoabF9VwEXcxBF8xzv0Y7bMwSqA83hax9BXHE3ghc0gVQAfcBzPMYwlPMFJ3MW17QLmsRttmMvGDmA6Pwe3C/ibDdTetmh9Ha9KiP4DyirZvxeiqPMW7Mo1Hw3Vjn2IeYz9mMnvsR57F/P+mK+OelX0BR3oxkc8SPV+GS+STAyhGWM4l6D3E+QqTuA9JnG4DHAPfbiD62jFBPbUZCtucwzRiA9xKe25jRtlgFN4i1/owSfsRYDD0z94k4RuIDnwDafxOhvtwucyQHx/hFDQiPNZTBXUWtzgVZaRDd7HmaJO3omXOIMfOVy31iS5MyV1MDlwBTtS3J/hAn7XOrKZVEQyx/N/oKhZfmIUIzl0G/ZV0aJQzvC0N8n0oWwh8vI4h3JFYes6UQWw9mAlBa2S5KKQNBxQKlxbSfKWjdU7sAxCglIZXmUQ3wAAAABJRU5ErkJggg==" alt="Microphone"></button>
-            <button class="chat-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARtJREFUSEvd1LEuBGEUxfHfdiJ6hRIRGoUHoSJKOgUVhTegUOkUlMID8BQKEjSiUngARIW5yUwyOzbrm53ZCF81mZnv/O899+R2DPl0hqzvfwGWsIeZhrbdYgeXoVO26BnjDcWL6w+YLgMC9JF/bTKXbzqFWC/AGF4wi/vEzpIBIX6EVRxiq21A6H2WRFNtS+4gbNnAJg4yq7ZLsNEsaaeZbSt4r3SWDOjnyBmWcYL1NgBrWa5fcY54Pi6JRhfxvji1O5jDVR7hGHhUP1ISfMM8IvdF7Lvi3i+m4fU1pn5I0B0W8nnU6qDwOiWhxTxqAVKEq//8HiAqecLEIGX3uPOIyeo2XcR+C+v6Bru4qAJaKr5bJnXHDAz/+4AvDp87GekKjNgAAAAASUVORK5CYII=" alt="Image"></button>
-            <button class="chat-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhtJREFUSEu11UnoTmEUx/HPXzJEip0hlAVFSLFSrGRIQoYFSkkSsZCFvwxhJSlTyYJQYiEZoyxk2MkUyZxsFSlDhOfU89bf7b73+r/13tW99xm+5znnd35PhzY/HW3eXx2gNxZiJiZgJP7gHR7iGs7jZ7NAqwCzcCRvWnXQV1iDm2WTmgF2pEi35wXvcRZX8Cj/m4i5WIxh+d8m7CtCygCNzb9gGS7ltJQF2AOLcBx9sQEHuk4sAiKqi/iWIp6cFj/9TxFMwV0EcBruNNZ1BfTHCwzGcpwu2TwKHE/ZyTdiP56nwo9vFL7rxLU4nPL6DOOapKUK0CurKwKcjwvFSK4ilLMug8qyUwWI+XuwBcewugj4kAaGYhTeNMl9HWAqbuNBquWkIuBrVkKo4XsGNDasq3Uj1YPwEZ8wsAgIWUahByDe4+kuINZ+zuvj/R81RPVHZwU8aTFFkZb7WShji4AzSWJLsRl7WwRsxa5Ux1OpjiuKgND+SbzEGPzuZh/0TP3zGsOxBOeKgChupCkmrEwmd6KbgPXZJqJZo9F+lHXkDFxvwSrCVu5lq5iepdq05TuxO6shzO5yhUbDeyId0Vj9kkTjFIeqzK4xti0pbGf+eJvtOjr9McISwkrmZScdkuUcTnqwGEzVhTMnGd/R3N1VjRYXzircKptUd2X2SVEvwOxcuBE52lBL6P1GNrVfzSKoA9RZRO142wF/Afg0ahnLfIJIAAAAAElFTkSuQmCC" alt="Plus"></button>
-            
-        </div>
-    </div>
-    
+
 </body>
+
 </html>
